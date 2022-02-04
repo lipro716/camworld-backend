@@ -1,4 +1,4 @@
-require('./models/Assocations')
+require('./models/Associations')
 
 dotenv.config()
 

@@ -14,7 +14,7 @@ const uploadRoutes = require('./routes/uploadRoutes');
   const app = express();
   require('express-ws')(app);
   app.use(cors())
-  require('./models/Assocations');
+  require('./models/Associations');
   const httpServer = createServer(app);
 
   const resolvers = require('./graphql/resolver/rootResolver')
