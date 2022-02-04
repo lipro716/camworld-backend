@@ -1,6 +1,9 @@
 const User = require('./User')
 const Role = require('./Role')
 const UserRole = require('./UserRole')
+const CategoryProduct = require('./CategoryProduct')
+const Product = require('./Product')
+const Category = require('./Category')
 
 User.belongsToMany(Role, {
     hooks: true,
@@ -13,3 +16,13 @@ Role.belongsToMany(User, {
 UserRole.belongsTo(User)
 UserRole.belongsTo(Role)
 
+Category.belongsToMany(Product, {
+    hooks: false,
+    through: CategoryProduct,
+})
+Product.belongsToMany(Category, {
+    hooks: false,
+    through: CategoryProduct,
+})
+UserRole.belongsTo(User)
+UserRole.belongsTo(Role)
