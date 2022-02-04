@@ -1,8 +1,21 @@
 require('./models/Associations')
+const User = require('./models/User');
+const Role = require('./models/Role');
+const UserRole = require('./models/UserRole');
+const Product = require('./models/Product');
+const Category = require('./models/Category');
+const Taxonomy = require("./models/Taxonomy");
+const SubTaxonomy = require("./models/SubTaxonomy");
+const ProductSubTaxonomy = require("./models/ProductSubTaxonomy");
+const Gallery = require("./models/Gallery");
+const Highlight = require("./models/Highlight");
+const Review = require("./models/Review");
+const Spec = require("./models/Spec");
+const dotenv = require('dotenv')
 
-dotenv.config()
+dotenv.config();
 
-const sequelize = require('./utils/database')
+const sequelize = require('./utils/database');
 
 async function db() {
     try {
@@ -25,6 +38,18 @@ const importData = async () => {
 
 const destroyData = async () => {
     try {
+        await User.destroy({where: {}})
+        await Role.destroy({where: {}})
+        await UserRole.destroy({where: {}})
+        await Product.destroy({where: {}})
+        await Category.destroy({where: {}})
+        await Taxonomy.destroy({where: {}})
+        await SubTaxonomy.destroy({where: {}})
+        await ProductSubTaxonomy.destroy({where: {}})
+        await Gallery.destroy({where: {}})
+        await Highlight.destroy({where: {}})
+        await Review.destroy({where: {}})
+        await Spec.destroy({where: {}})
         console.log('Data Destroyed!')
         process.exit()
     } catch (e) {
@@ -33,7 +58,7 @@ const destroyData = async () => {
 }
 
 if (process.argv[2] === '-d') {
-    destroyData()
+    destroyData().then()
 } else {
-    importData()
+    importData().then()
 }

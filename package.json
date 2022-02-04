@@ -4,10 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server",
-    "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d"
+    "start": "node server.js",
+    "server": "nodemon server",
+    "data:import": "node seeder",
+    "data:destroy": "node seeder -d"
   },
   "repository": {
     "type": "git",
