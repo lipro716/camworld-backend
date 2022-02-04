@@ -18,6 +18,10 @@ const Taxonomy = sequelize.define('taxonomies', {
     allowNull: false,
     unique: true,
   },
+  categoryId: {
+    allowNull: false,
+    type: Sequelize.INTEGER,
+  },
 }, { timestamps: false })
 
 module.exports = Taxonomy

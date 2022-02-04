@@ -1,9 +1,15 @@
 const User = require('./User')
 const Role = require('./Role')
 const UserRole = require('./UserRole')
-const CategoryProduct = require('./CategoryProduct')
 const Product = require('./Product')
 const Category = require('./Category')
+const Taxonomy = require("./Taxonomy");
+const SubTaxonomy = require("./SubTaxonomy");
+const ProductSubTaxonomy = require("./ProductSubTaxonomy");
+const Gallery = require("./Gallery");
+const Highlight = require("./Highlight");
+const Review = require("./Review");
+const Spec = require("./Spec");
 
 User.belongsToMany(Role, {
     hooks: true,
@@ -16,13 +22,34 @@ Role.belongsToMany(User, {
 UserRole.belongsTo(User)
 UserRole.belongsTo(Role)
 
-Category.belongsToMany(Product, {
+Category.hasMany(Taxonomy, { foreignKey: 'categoryId', as: 'taxonomies' })
+Taxonomy.belongsTo(Category)
+
+Category.hasMany(Product, { foreignKey: 'categoryId', as: 'products' })
+Product.belongsTo(Category)
+
+Taxonomy.hasMany(SubTaxonomy, { foreignKey: 'taxonomyId', as: 'subTaxonomies' })
+SubTaxonomy.belongsTo(Taxonomy)
+
+Product.belongsToMany(SubTaxonomy, {
     hooks: false,
-    through: CategoryProduct,
+    through: ProductSubTaxonomy,
 })
-Product.belongsToMany(Category, {
+SubTaxonomy.belongsToMany(Product, {
     hooks: false,
-    through: CategoryProduct,
+    through: ProductSubTaxonomy,
 })
-UserRole.belongsTo(User)
-UserRole.belongsTo(Role)
+ProductSubTaxonomy.belongsTo(Product)
+ProductSubTaxonomy.belongsTo(SubTaxonomy)
+
+Product.hasMany(Gallery, { foreignKey: 'productId', as: 'gallery' })
+Gallery.belongsTo(Product)
+
+Product.hasMany(Highlight, { foreignKey: 'productId', as: 'highlights' })
+Highlight.belongsTo(Product)
+
+Product.hasMany(Review, { foreignKey: 'productId', as: 'reviews' })
+Review.belongsTo(Product)
+
+Product.hasMany(Spec, { foreignKey: 'productId', as: 'specs' })
+Spec.belongsTo(Product)

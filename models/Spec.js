@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const sequelize = require('../utils/database')
 
-const Highlight = sequelize.define('specs', {
+const Spec = sequelize.define('specs', {
   id: {
     primaryKey: true,
     autoIncrement: true,
@@ -22,4 +22,4 @@ const Highlight = sequelize.define('specs', {
   },
 }, { timestamps: false })
 
-module.exports = Highlight
+module.exports = Spec

@@ -12,6 +12,10 @@ const Gallery = sequelize.define('gallery', {
     type: Sequelize.STRING,
     allowNull: false,
   },
+  productId: {
+    allowNull: false,
+    type: Sequelize.INTEGER,
+  },
 }, { timestamps: false })
 
 module.exports = Gallery
