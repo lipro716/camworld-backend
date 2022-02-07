@@ -12,10 +12,14 @@ const Highlight = require("./models/Highlight");
 const Review = require("./models/Review");
 const Spec = require("./models/Spec");
 const dotenv = require('dotenv')
+const categories = require('./data/categories')
+const products = require('./data/products')
 
 dotenv.config();
 
 const sequelize = require('./utils/database');
+const {createProduct} = require('./graphql/resolver/productResolver');
+const {createCategory} = require('./graphql/resolver/categoryResolver');
 
 async function db() {
     try {
@@ -28,6 +32,12 @@ async function db() {
 db()
 const importData = async () => {
     try {
+        for await (let item of categories) {
+            await createCategory(item)
+        }
+        for await (let item of products) {
+            await createProduct(item)
+        }
         console.log('Data Imported!')
         process.exit()
     } catch (e) {
