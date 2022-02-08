@@ -1,7 +1,7 @@
-const Sequelize = require('sequelize')
-const sequelize = require('../utils/database')
+const Sequelize = require('sequelize');
+const sequelize = require('../utils/database');
 
-const Spec = sequelize.define('specs', {
+const Spec = sequelize.define('spec', {
   id: {
     primaryKey: true,
     autoIncrement: true,
@@ -20,6 +20,6 @@ const Spec = sequelize.define('specs', {
     allowNull: false,
     type: Sequelize.INTEGER,
   },
-}, { timestamps: false })
+}, {timestamps: false});
 
-module.exports = Spec
+module.exports = Spec;

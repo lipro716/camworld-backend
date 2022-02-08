@@ -1,7 +1,7 @@
-const Sequelize = require('sequelize')
-const sequelize = require('../utils/database')
+const Sequelize = require('sequelize');
+const sequelize = require('../utils/database');
 
-const Category = sequelize.define('categories', {
+const Category = sequelize.define('category', {
   id: {
     primaryKey: true,
     autoIncrement: true,
@@ -18,6 +18,6 @@ const Category = sequelize.define('categories', {
     allowNull: false,
     unique: true,
   },
-}, { timestamps: false })
+}, {timestamps: false});
 
-module.exports = Category
+module.exports = Category;

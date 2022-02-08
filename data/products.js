@@ -57,6 +57,11 @@ const products = [
           value: 'TEN-EL18a Lithium-ion Battery',
         },
       ],
+    subTaxonomy: [
+      {
+        id: 3,
+      },
+    ],
   },
   {
     name: 'Nikon D6',

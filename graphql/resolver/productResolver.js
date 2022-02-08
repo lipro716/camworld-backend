@@ -30,7 +30,13 @@ const self = module.exports = {
     }
     if (dto.specs) {
       for await (let item of dto.specs) {
-        await self.addNewSpec({key: item.key, value: item.value, productId: product.id});
+        await self.addNewSpec(
+          {key: item.key, value: item.value, productId: product.id});
+      }
+    }
+    if (dto.subTaxonomy) {
+      for await (let item of dto.subTaxonomy) {
+        product.addSubTaxonomy(item.id)
       }
     }
   },

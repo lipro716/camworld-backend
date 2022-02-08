@@ -7,6 +7,7 @@ const Category = require('./models/Category');
 const Taxonomy = require("./models/Taxonomy");
 const SubTaxonomy = require("./models/SubTaxonomy");
 const ProductSubTaxonomy = require("./models/ProductSubTaxonomy");
+const CategoryTaxonomy = require("./models/CategoryTaxonomy");
 const Gallery = require("./models/Gallery");
 const Highlight = require("./models/Highlight");
 const Review = require("./models/Review");
@@ -14,10 +15,14 @@ const Spec = require("./models/Spec");
 const dotenv = require('dotenv')
 const categories = require('./data/categories')
 const products = require('./data/products')
+const taxonomies = require('./data/taxonomies')
+const subTaxonomies = require('./data/sub-taxonomies')
 
 dotenv.config();
 
 const sequelize = require('./utils/database');
+const {createSubTaxonomy} = require('./graphql/resolver/taxonomyResolver');
+const {createTaxonomy} = require('./graphql/resolver/taxonomyResolver');
 const {createProduct} = require('./graphql/resolver/productResolver');
 const {createCategory} = require('./graphql/resolver/categoryResolver');
 
@@ -34,6 +39,12 @@ const importData = async () => {
     try {
         for await (let item of categories) {
             await createCategory(item)
+        }
+        for await (let item of taxonomies) {
+            await createTaxonomy(item)
+        }
+        for await (let item of subTaxonomies) {
+            await createSubTaxonomy(item)
         }
         for await (let item of products) {
             await createProduct(item)
@@ -60,6 +71,7 @@ const destroyData = async () => {
         await Highlight.destroy({where: {}})
         await Review.destroy({where: {}})
         await Spec.destroy({where: {}})
+        await CategoryTaxonomy.destroy({where: {}})
         console.log('Data Destroyed!')
         process.exit()
     } catch (e) {

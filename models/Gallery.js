@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize')
-const sequelize = require('../utils/database')
+const Sequelize = require('sequelize');
+const sequelize = require('../utils/database');
 
 const Gallery = sequelize.define('gallery', {
   id: {
@@ -16,6 +16,6 @@ const Gallery = sequelize.define('gallery', {
     allowNull: false,
     type: Sequelize.INTEGER,
   },
-}, { timestamps: false })
+}, {timestamps: false});
 
-module.exports = Gallery
+module.exports = Gallery;

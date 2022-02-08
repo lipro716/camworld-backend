@@ -1,7 +1,7 @@
-const Sequelize = require('sequelize')
-const sequelize = require('../utils/database')
+const Sequelize = require('sequelize');
+const sequelize = require('../utils/database');
 
-const Highlight = sequelize.define('highlights', {
+const Highlight = sequelize.define('highlight', {
   id: {
     primaryKey: true,
     autoIncrement: true,
@@ -16,6 +16,6 @@ const Highlight = sequelize.define('highlights', {
     allowNull: false,
     type: Sequelize.INTEGER,
   },
-}, { timestamps: false })
+}, {timestamps: false});
 
-module.exports = Highlight
+module.exports = Highlight;

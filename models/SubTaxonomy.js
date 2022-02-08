@@ -1,7 +1,7 @@
-const Sequelize = require('sequelize')
-const sequelize = require('../utils/database')
+const Sequelize = require('sequelize');
+const sequelize = require('../utils/database');
 
-const SubTaxonomy = sequelize.define('sub-taxonomies', {
+const SubTaxonomy = sequelize.define('subTaxonomy', {
   id: {
     primaryKey: true,
     autoIncrement: true,
@@ -16,6 +16,6 @@ const SubTaxonomy = sequelize.define('sub-taxonomies', {
     allowNull: false,
     type: Sequelize.INTEGER,
   },
-}, { timestamps: false })
+}, {timestamps: false});
 
-module.exports = SubTaxonomy
+module.exports = SubTaxonomy;

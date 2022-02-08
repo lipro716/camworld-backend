@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize')
-const sequelize = require('../utils/database')
+const Sequelize = require('sequelize');
+const sequelize = require('../utils/database');
 
 const Role = sequelize.define('role', {
   id: {
@@ -13,6 +13,6 @@ const Role = sequelize.define('role', {
     allowNull: false,
     unique: true,
   },
-}, { timestamps: false })
+}, {timestamps: false});
 
-module.exports = Role
+module.exports = Role;

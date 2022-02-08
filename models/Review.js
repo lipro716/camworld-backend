@@ -1,7 +1,7 @@
-const Sequelize = require('sequelize')
-const sequelize = require('../utils/database')
+const Sequelize = require('sequelize');
+const sequelize = require('../utils/database');
 
-const Review = sequelize.define('reviews', {
+const Review = sequelize.define('review', {
   id: {
     primaryKey: true,
     autoIncrement: true,
@@ -32,7 +32,6 @@ const Review = sequelize.define('reviews', {
     allowNull: false,
     type: Sequelize.INTEGER,
   },
-}, { timestamps: true })
+}, {timestamps: true});
 
-
-module.exports = Review
+module.exports = Review;

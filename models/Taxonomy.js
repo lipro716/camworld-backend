@@ -1,7 +1,7 @@
-const Sequelize = require('sequelize')
-const sequelize = require('../utils/database')
+const Sequelize = require('sequelize');
+const sequelize = require('../utils/database');
 
-const Taxonomy = sequelize.define('taxonomies', {
+const Taxonomy = sequelize.define('taxonomy', {
   id: {
     primaryKey: true,
     autoIncrement: true,
@@ -13,15 +13,6 @@ const Taxonomy = sequelize.define('taxonomies', {
     allowNull: false,
     unique: true,
   },
-  slug: {
-    type: Sequelize.STRING,
-    allowNull: false,
-    unique: true,
-  },
-  categoryId: {
-    allowNull: false,
-    type: Sequelize.INTEGER,
-  },
-}, { timestamps: false })
+}, {timestamps: false});
 
-module.exports = Taxonomy
+module.exports = Taxonomy;
