@@ -26,7 +26,9 @@ const uploadRoutes = require('./routes/uploadRoutes');
   const server = new ApolloServer({
     schema,
     context: contextMiddleware,
-    plugins: [ApolloServerPluginLandingPageDisabled()],
+    // plugins: [ApolloServerPluginLandingPageDisabled()],
+    playground: true,
+    introspection: true,
   });
 
   app.use('/api/upload', uploadRoutes)

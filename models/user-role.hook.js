@@ -1,4 +1,3 @@
-const {getRoleByName} = require('../graphql/resolver/roleResolver');
 exports.hooks = {
   afterCreate: (User, payload) => {
     AddUserRole(User, payload);
@@ -6,6 +5,6 @@ exports.hooks = {
 };
 
 function AddUserRole(User) {
-  const role = getRoleByName('customer');
-  User.addRole(role.id);
+  // const role = getRoleByName('customer');
+  // User.addRole(role.id);
 }

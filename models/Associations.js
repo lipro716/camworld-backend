@@ -23,10 +23,10 @@ Role.belongsToMany(User, {
 UserRole.belongsTo(User);
 UserRole.belongsTo(Role);
 
-Category.hasMany(Product, {foreignKey: 'categoryId', as: 'products'});
+Category.hasMany(Product, {foreignKey: 'categoryId'});
 Product.belongsTo(Category);
 
-Taxonomy.hasMany(SubTaxonomy, {foreignKey: 'taxonomyId', as: 'subTaxonomies'});
+Taxonomy.hasMany(SubTaxonomy, {foreignKey: 'taxonomyId'});
 SubTaxonomy.belongsTo(Taxonomy);
 
 Product.belongsToMany(SubTaxonomy, {
@@ -40,16 +40,16 @@ SubTaxonomy.belongsToMany(Product, {
 ProductSubTaxonomy.belongsTo(Product);
 ProductSubTaxonomy.belongsTo(SubTaxonomy);
 
-Product.hasMany(Gallery, {foreignKey: 'productId', as: 'gallery'});
+Product.hasMany(Gallery, {foreignKey: 'productId'});
 Gallery.belongsTo(Product);
 
-Product.hasMany(Highlight, {foreignKey: 'productId', as: 'highlights'});
+Product.hasMany(Highlight, {foreignKey: 'productId'});
 Highlight.belongsTo(Product);
 
-Product.hasMany(Review, {foreignKey: 'productId', as: 'reviews'});
+Product.hasMany(Review, {foreignKey: 'productId'});
 Review.belongsTo(Product);
 
-Product.hasMany(Spec, {foreignKey: 'productId', as: 'specs'});
+Product.hasMany(Spec, {foreignKey: 'productId'});
 Spec.belongsTo(Product);
 
 Taxonomy.belongsToMany(Category, {

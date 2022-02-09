@@ -1,15 +1,15 @@
 const subTaxonomies = [
   {
     name: 'Canon',
-    taxonomyId: 1,
+    taxonomy: 'Brands',
   },
   {
     name: 'Sony',
-    taxonomyId: 1,
+    taxonomy: 'Brands',
   },
   {
     name: 'Nikon',
-    taxonomyId: 1,
+    taxonomy: 'Brands',
   },
 ];
 
