@@ -1,4 +1,4 @@
-const { buildSchema } = require('graphql')
+const {buildSchema} = require('graphql');
 
 module.exports = buildSchema(` 
     type Product {
@@ -13,7 +13,7 @@ module.exports = buildSchema(`
       youtubeEmbed: String
       rating: Int
       numReviews: Int
-      category: [Category]
+      category: Category
       subTaxonomies: [SubTaxonomy]
       galleries: [Gallery]
       highlights: [Highlight]
@@ -53,4 +53,4 @@ module.exports = buildSchema(`
     type Query {
       getProducts(categoryId: Int, subTaxonomy: [Int], limit: Int, offset: Int): CountProd
     }
-`)
+`);

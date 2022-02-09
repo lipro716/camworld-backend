@@ -8,7 +8,6 @@ module.exports = {
   Query: {
     async getProducts(root, {categoryId, subTaxonomy, limit, offset}) {
       try {
-        let args = {};
         let category = {};
         let filters = {};
         if (categoryId) {
@@ -23,9 +22,9 @@ module.exports = {
             },
           };
         }
-        args = {
+        return await Product.findAndCountAll({
           order: [
-            ['createdAt', 'DESC'],
+            ['id', 'DESC'],
           ],
           include: [
             {
@@ -35,6 +34,7 @@ module.exports = {
             {
               model: SubTaxonomy,
               where: filters,
+              required: false,
             },
             {
               all: true,
@@ -43,8 +43,7 @@ module.exports = {
           limit: limit,
           offset: offset,
           distinct: true,
-        };
-        return await Product.findAndCountAll({args});
+        });
       } catch (e) {
         throw new Error('Fetch products is not available');
       }
