@@ -1,11 +1,18 @@
 const Taxonomy = require('../models/Taxonomy');
 const SubTaxonomy = require('../models/SubTaxonomy');
+const {getCategory} = require('./category');
 
 const self = module.exports = {
   async createTaxonomy(dto) {
-    return await Taxonomy.create({
+    const taxonomy = await Taxonomy.create({
       name: dto.name,
     });
+    if (dto.categories) {
+      for await (let item of dto.categories) {
+        const category = await getCategory({name: item})
+        category.addTaxonomy(taxonomy.id)
+      }
+    }
   },
 
   async getTaxonomy(dto) {

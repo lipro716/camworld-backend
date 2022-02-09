@@ -30,6 +30,13 @@ module.exports = buildSchema(`
       id: Int
       name: String
       slug: String
+      taxonomies: [Taxonomy]
+    }
+    
+    type Taxonomy {
+      id: Int
+      name: String
+      subTaxonomies: [SubTaxonomy]
     }
     
     type SubTaxonomy {
@@ -69,5 +76,6 @@ module.exports = buildSchema(`
     
     type Query {
       getProducts(categoryId: Int, subTaxonomy: [Int], limit: Int, offset: Int): CountProd
+      getCategories: [Category]
     }
 `);
