@@ -6,10 +6,14 @@ const Op = Sequelize.Op;
 
 module.exports = {
   Query: {
-    async getProducts(root, {categoryId, subTaxonomy, limit, offset}) {
+    async getProducts(root, {categoryId, subTaxonomy, limit, offset, sort}) {
       try {
         let category = {};
         let filters = {};
+        let price = {};
+        let order = [
+          ['createdAt', 'DESC'],
+        ];
         if (categoryId) {
           category = {
             id: categoryId,
@@ -22,10 +26,28 @@ module.exports = {
             },
           };
         }
+        if (sort && sort.sortBy) {
+          if (sort.sortBy === 'low_to_high') {
+            order = [
+              ['price', 'ASC'],
+            ];
+          } else if (sort.sortBy === 'high_to_low') {
+            order = [
+              ['price', 'DESC'],
+            ];
+          }
+        }
+        if (sort && sort.priceMin && sort.priceMax) {
+          price = {
+            price: {
+              [Op.gte]: sort.priceMin,
+              [Op.lte]: sort.priceMax,
+            },
+          };
+        }
         return await Product.findAndCountAll({
-          order: [
-            ['createdAt', 'DESC'],
-          ],
+          order,
+          where: price,
           include: [
             {
               model: Category,

@@ -74,8 +74,14 @@ module.exports = buildSchema(`
       productId: Int
     }
     
+    input sortItem {
+      sortBy: String
+      priceMin: Float
+      priceMax: Float
+    }
+    
     type Query {
-      getProducts(categoryId: Int, subTaxonomy: [Int], limit: Int, offset: Int): CountProd
+      getProducts(categoryId: Int, subTaxonomy: [Int], limit: Int, offset: Int, sort: sortItem): CountProd
       getCategories: [Category]
       getProductById(id: ID!): Product!
     }
