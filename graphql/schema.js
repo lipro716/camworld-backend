@@ -28,26 +28,43 @@ module.exports = buildSchema(`
     
     type Category {
       id: Int
+      name: String
+      slug: String
     }
     
     type SubTaxonomy {
       id: Int
+      name: String
+      taxonomyId: Int
     }
     
     type Gallery {
       id: Int
+      url: String
+      productId: Int
     }
     
     type Highlight {
       id: Int
+      name: String
+      productId: Int
     }
     
     type Review {
       id: Int
+      name: String
+      email: String
+      title: String
+      review: String
+      rating: Int
+      productId: Int
     }
     
     type Spec {
       id: Int
+      key: String
+      value: String
+      productId: Int
     }
     
     type Query {
