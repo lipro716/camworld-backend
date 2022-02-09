@@ -13,6 +13,18 @@ module.exports = {
           order: [
             ['name', 'ASC'],
           ],
+        });
+      } catch (e) {
+        throw new Error('Fetch is not available');
+      }
+    },
+
+    async getCategory(root, {id}) {
+      try {
+        return await Category.findOne({
+          where: {
+            id: id,
+          },
           include: [
             {
               model: Taxonomy,

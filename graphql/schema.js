@@ -83,6 +83,7 @@ module.exports = buildSchema(`
     type Query {
       getProducts(categoryId: Int, subTaxonomy: [Int], limit: Int, offset: Int, sort: sortItem): CountProd
       getCategories: [Category]
-      getProductById(id: ID!): Product!
+      getCategory(id: Int!): Category
+      getProductById(id: Int!): Product!
     }
 `);
