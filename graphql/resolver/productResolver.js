@@ -24,7 +24,7 @@ module.exports = {
         }
         return await Product.findAndCountAll({
           order: [
-            ['id', 'DESC'],
+            ['createdAt', 'DESC'],
           ],
           include: [
             {
