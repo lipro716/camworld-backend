@@ -40,12 +40,28 @@ module.exports = {
               all: true,
             },
           ],
-          limit: limit,
-          offset: offset,
+          limit,
+          offset,
           distinct: true,
         });
       } catch (e) {
         throw new Error('Fetch products is not available');
+      }
+    },
+    async getProductById(root, {id}) {
+      try {
+        return await Product.findOne({
+          where: {
+            id,
+          },
+          include: [
+            {
+              all: true,
+            },
+          ],
+        });
+      } catch (e) {
+        throw new Error(`Fetch product is not available. Error: ${e}`);
       }
     },
   },

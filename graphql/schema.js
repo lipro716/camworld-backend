@@ -77,5 +77,6 @@ module.exports = buildSchema(`
     type Query {
       getProducts(categoryId: Int, subTaxonomy: [Int], limit: Int, offset: Int): CountProd
       getCategories: [Category]
+      getProductById(id: ID!): Product!
     }
 `);
