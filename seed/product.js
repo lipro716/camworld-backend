@@ -40,7 +40,7 @@ const self = module.exports = {
     if (dto.subTaxonomy) {
       for await (let item of dto.subTaxonomy) {
         const subTaxonomy = await getSubTaxonomy({name: item.name})
-        product.addSubTaxonomy(subTaxonomy.id);
+        await product.addSubTaxonomy(subTaxonomy.id);
       }
     }
   },

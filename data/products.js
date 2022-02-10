@@ -121,6 +121,11 @@ const products = [
           value: 'EN-EL18c Rechargeable Li-ion Battery',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Nikon',
+      },
+    ],
   },
   {
     name: 'Nikon D850',
@@ -180,6 +185,11 @@ const products = [
           value: 'EN-EL15a Rechargeable Li-ion Battery',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Nikon',
+      },
+    ],
   },
   {
     name: 'Nikon D610',
@@ -239,6 +249,11 @@ const products = [
           value: 'EN-EL15b Rechargeable Li-ion Battery',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Nikon',
+      },
+    ],
   },
   {
     name: 'Canon PowerShot SX540',
@@ -288,6 +303,11 @@ const products = [
           value: '1 Lithium ion batteries required. (included)',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Canon',
+      },
+    ],
   },
   {
     name: 'Sony Alpha 7C Compact',
@@ -339,6 +359,11 @@ const products = [
           value: '2.4 GHz Band',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Sony',
+      },
+    ],
   },
   {
     name: 'AF-S FISHEYE NIKKOR 8-15mm f/3.5-4.5E ED',
@@ -387,6 +412,11 @@ const products = [
           value: '0.34x',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Nikon',
+      },
+    ],
   },
   {
     name: 'FE 12–24 mm F2.8 GM',
@@ -437,6 +467,11 @@ const products = [
           value: '122° to 84°',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Sony',
+      },
+    ],
   },
   {
     name: 'RF600mm F11 IS STM',
@@ -479,6 +514,11 @@ const products = [
           value: '14.76 ft / 4.5m',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Canon',
+      },
+    ],
   },
   {
     name: 'Nikon Bag Yellow',
@@ -513,6 +553,11 @@ const products = [
           value: '9.84 (L) x 7.87 (W) x 5.1 (H) inches, 1.05 lbs',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Nikon',
+      },
+    ],
   },
   {
     name: 'Camera Backpack EDC-1',
@@ -548,6 +593,11 @@ const products = [
           value: '15" Laptop or Tablet',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Canon',
+      },
+    ],
   },
   {
     name: 'Sony System Carrying Case',
@@ -578,6 +628,11 @@ const products = [
           value: 'DSLR and 1-2 Lenses',
         },
       ],
+    subTaxonomy: [
+      {
+        name: 'Sony',
+      },
+    ],
   },
 ];
 
