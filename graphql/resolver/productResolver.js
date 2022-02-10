@@ -9,7 +9,10 @@ module.exports = {
     async getProducts(root, {categoryId, subTaxonomy, limit, offset, sort}) {
       try {
         let category = {};
-        let filters = {};
+        let filters = {
+          model: SubTaxonomy,
+          required: false,
+        };
         let price = {};
         let order = [
           ['createdAt', 'DESC'],
@@ -19,11 +22,15 @@ module.exports = {
             id: categoryId,
           };
         }
-        if (subTaxonomy) {
+        if (subTaxonomy && subTaxonomy.length > 0) {
           filters = {
-            id: {
-              [Op.or]: subTaxonomy,
+            where: {
+              id: {
+                [Op.or]: subTaxonomy,
+              },
             },
+            model: SubTaxonomy,
+            required: true,
           };
         }
         if (sort && sort.sortBy) {
@@ -53,11 +60,7 @@ module.exports = {
               model: Category,
               where: category,
             },
-            {
-              model: SubTaxonomy,
-              where: filters,
-              required: false,
-            },
+            filters,
             {
               all: true,
             },
