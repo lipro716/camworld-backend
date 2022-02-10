@@ -80,10 +80,33 @@ module.exports = buildSchema(`
       priceMax: Float
     }
     
+    input ReviewInput {
+      name: String!
+      email: String!
+      title: String!
+      review: String!
+      rating: Int
+      productId: Int!
+   }
+   
+   input Mail {
+      name: String!
+      email: String!
+      website: String
+      message: String
+      radioGroup: String
+      token: String
+   }
+    
     type Query {
       getProducts(categoryId: Int, subTaxonomy: [Int], limit: Int, offset: Int, sort: sortItem): CountProd
       getCategories: [Category]
       getCategory(id: Int!): Category
       getProductById(id: Int!): Product!
+    }
+    
+    type Mutation {
+      addReview(data: ReviewInput!): Review
+      sendMail(data: Mail!): String
     }
 `);
