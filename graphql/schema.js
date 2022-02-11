@@ -79,6 +79,12 @@ module.exports = buildSchema(`
       id: Int
       email: String
       token: String
+      roles: [Role]
+    }
+    
+    type Role {
+      id: Int
+      name: String
     }
     
     input sortItem {
@@ -114,7 +120,8 @@ module.exports = buildSchema(`
       getProducts(categoryId: Int, subTaxonomy: [Int], limit: Int, offset: Int, sort: sortItem): CountProd
       getCategories: [Category]
       getCategory(id: Int!): Category
-      getProductById(id: Int!): Product!
+      getProductById(id: Int!): Product
+      getUser: User
     }
     
     type Mutation {

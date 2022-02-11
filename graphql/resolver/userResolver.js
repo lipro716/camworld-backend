@@ -6,6 +6,24 @@ const Role = require('../../models/Role');
 const matchPassword = require('../../utils/matchPassword');
 
 module.exports = {
+  Query: {
+    async getUser(root, {user}) {
+      try {
+        return await User.findOne({
+          where: {
+            id: user.id,
+          },
+          include: [
+            {
+              all: true,
+            },
+          ],
+        });
+      } catch (e) {
+        throw new Error(`Fetch is not available. Error: ${e}`);
+      }
+    },
+  },
   Mutation: {
     async registerUser(root, {data}) {
       try {
