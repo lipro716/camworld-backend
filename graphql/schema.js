@@ -19,6 +19,14 @@ module.exports = buildSchema(`
       highlights: [Highlight]
       reviews: [Review]
       specs: [Spec]
+      descriptions: [Description]
+    }
+    
+    type Description {
+      id: Int
+      title: String
+      value: String
+      productId: Int
     }
     
     type CountProd {
