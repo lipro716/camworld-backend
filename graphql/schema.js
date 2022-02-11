@@ -122,5 +122,6 @@ module.exports = buildSchema(`
       sendMail(data: MailInput!): String
       registerUser(data: UserInput!): User
       loginUser(data: UserInput!): User
+      updateUser(data: UserInput!): User
     }
 `);
