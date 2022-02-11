@@ -13,6 +13,7 @@ module.exports = {
           rating: data.rating,
           productId: data.productId,
         });
+
         const product = await Product.findOne({
           where: {id: data.productId}, include: [{model: Review}],
         });
