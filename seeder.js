@@ -3,6 +3,7 @@ const User = require('./models/User');
 const Role = require('./models/Role');
 const UserRole = require('./models/UserRole');
 const Product = require('./models/Product');
+const Description = require('./models/Description');
 const Category = require('./models/Category');
 const Taxonomy = require('./models/Taxonomy');
 const SubTaxonomy = require('./models/SubTaxonomy');
@@ -71,6 +72,7 @@ const destroyData = async () => {
     await Review.destroy({where: {}});
     await Spec.destroy({where: {}});
     await CategoryTaxonomy.destroy({where: {}});
+    await Description.destroy({where: {}});
     console.log('Data Destroyed!');
     process.exit();
   } catch (e) {

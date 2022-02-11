@@ -2,6 +2,7 @@ const Gallery = require('../models/Gallery');
 const Highlight = require('../models/Highlight');
 const Spec = require('../models/Spec');
 const Product = require('../models/Product');
+const Description = require('../models/Description');
 const {getCategory} = require('./category');
 const {getSubTaxonomy} = require('./taxonomy');
 const {generateProductSlug} = require('../utils/helpers');
@@ -43,6 +44,13 @@ const self = module.exports = {
         await product.addSubTaxonomy(subTaxonomy.id);
       }
     }
+    if (dto.description) {
+      for await (let item of dto.description) {
+        await self.addDescription(
+          {title: item.title, value: item.value, productId: product.id}
+        )
+      }
+    }
   },
 
   async addNewGalleryImage(dto) {
@@ -62,6 +70,14 @@ const self = module.exports = {
   async addNewSpec(dto) {
     return await Spec.create({
       key: dto.key,
+      value: dto.value,
+      productId: dto.productId,
+    });
+  },
+
+  async addDescription(dto) {
+    return await Description.create({
+      title: dto.title,
       value: dto.value,
       productId: dto.productId,
     });

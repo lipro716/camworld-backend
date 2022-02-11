@@ -11,6 +11,7 @@ const Highlight = require('./Highlight');
 const Review = require('./Review');
 const Spec = require('./Spec');
 const CategoryTaxonomy = require('./CategoryTaxonomy');
+const Description = require('./Description');
 
 User.belongsToMany(Role, {
   hooks: true,
@@ -42,6 +43,9 @@ ProductSubTaxonomy.belongsTo(SubTaxonomy);
 
 Product.hasMany(Gallery, {foreignKey: 'productId'});
 Gallery.belongsTo(Product);
+
+Product.hasMany(Description, {foreignKey: 'productId'});
+Description.belongsTo(Product);
 
 Product.hasMany(Highlight, {foreignKey: 'productId'});
 Highlight.belongsTo(Product);

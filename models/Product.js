@@ -22,10 +22,6 @@ const Product = sequelize.define('product', {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  description: {
-    type: Sequelize.TEXT,
-    allowNull: false,
-  },
   sku: {
     type: Sequelize.TEXT,
     allowNull: false,

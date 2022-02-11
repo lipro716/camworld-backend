@@ -17,7 +17,21 @@ const products = [
     numReviews: 1,
     sku: '156YRT34',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Game-changing low light capabilities',
+          value: 'The low light performance of the D5 might make it a legend. With Nikon\'s widest native ISO range (100 to 102,400) and highest expanded range (up to Hi-5 ISO 3,280,000), advancements in noise reduction and color fidelity and a next-generation AF system that performs in near darkness (EV -4), a world of new shooting opportunities has opened. Capture clear, sharp images you may not have attempted before—at night, in dark reception halls, arenas and more. For surveillance and security applications, this expanded ISO range means getting a shot others can\'t see without a flash.'
+        },
+        {
+          title: 'DPReview Field Tests the Nikon D5',
+          value: 'To test the D5\'s market-leading autofocus system, DPReview took the camera out to Santa Fe, and put one in the hands of professional photographer Michael Clark. In this field test, DPReview\'s technical editor Rishi Sanyal joined Michael to shoot a range of activities, including dirt bikes and white-water kayaking. Watch the video to see how the D5 performe'
+        },
+        {
+          title: 'EXPEED 5, Nikon’s most powerful processor ever',
+          value: 'The sheer imaging power of the D5 is exhilarating. With its Nikon developed 20.8MP FX-format CMOS sensor, the D5 is the highest resolution full-frame Nikon flagship ever and ready for your next challenge. Nikon\'s superior image processor has been updated to EXPEED 5 to harness the power of this remarkable new sensor, and a second processor has been added just for autofocus. All of the exquisite detail and textures, vibrant colors and rich tonality delivered by NIKKOR lenses is captured in flawless precision, even in extreme low light. Create images that move people.'
+        },
+      ],
     highlights:
       [
         'Format FX',
@@ -81,7 +95,25 @@ const products = [
     numReviews: 1,
     sku: '156YRT30',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Precision focusing with 17 custom Group Area AF choices',
+          value: 'For reliable subject acquisition around distracting foreground objects like a net, player or other obstacle, sports photographers will find the D6\'s 17 selectable group Area AF patterns indispensable.'
+        },
+        {
+          title: 'Image quality that shines in any light',
+          value: 'The stellar combination of the D6\'s high-resolution 20.8MP FX-format CMOS sensor and state-of-the-art EXPEED 6 image-processing engine enables class-leading ISO\'s up to 102,400 (expandable to ISO 3,280,000) for glorious image quality in the widest range of lighting conditions and shooting scenarios. The profound levels of sensitivity and resolution achieved by the D6 model greatly reduce low light noise and improve AF detection over the D5 camera.'
+        },
+        {
+          title: 'Turbo-charged by EXPEED 6 processor',
+          value: 'The D6 is powered by Nikon’s fastest, most comprehensive image processing engine to date, EXPEED 6. It’s the brains behind the DSLR’s stunning photo and video quality, autofocus power, low-light performance, noise suppression, distortion control, image clarity, color reproduction and more.'
+        },
+        {
+          title: 'Fast and reliable 14 fps continuous shooting',
+          value: 'For capturing the most electrifying of moments during high speed sports and action, the D6 can shoot a remarkable 14 fps for up to 200 continuous shots at JPEG fine quality*. Its beautifully clear optical viewfinder allows real-time confirmation of the composition while its highly dependable mechanical shutter eliminates any concern of banding or flickering at high speeds—crucial under professional environments where every moment matters.'
+        },
+      ],
     highlights:
       [
         'Format FX',
@@ -145,7 +177,21 @@ const products = [
     numReviews: 1,
     sku: '156YRT55',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Extreme resolution meets extreme speed',
+          value: 'When Nikon introduced the D800 and D800E, it set a new benchmark for DSLR image quality and super high resolution photography that approached medium format. Now, five years later, Nikon proudly introduces the next evolution in high resolution DSLRs, a camera that allows photographers to capture fast action in 45.7 megapixels of brilliant resolution. With remarkable advancements across the board—sensor design, autofocus, dynamic range, sensitivity, Speedlight control, battery life, shutter and mirror drive mechanisms, Silent Photography in Live-View mode, focus shift capability and more—this is quite possibly the most impressive, well-rounded DSLR yet.'
+        },
+        {
+          title: 'Speed to Match Your Vision',
+          value: 'With a continuous shooting speed of 7 fps or 9 fps using the optional MB-D18 battery pack with EN-EL 18b/a Lithium-ion Battery, the D850 can capture those perfect moments in action from a bride walking down the aisle to gravity-defying sports shots at it’s full 45.7 MP resolution.'
+        },
+        {
+          title: 'Designed to Outperform',
+          value: 'Whether in the studio or on-location, from the catwalk or the scenic overlook to a wedding ceremony or night sky, the Nikon D850 is the versatile tool to capture all, with astounding resolution and speed.'
+        },
+      ],
     highlights:
       [
         'Format FX',
@@ -209,7 +255,14 @@ const products = [
     numReviews: 1,
     sku: '122YRT55',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Decisive power. Faster workflow',
+          value: 'The power of a pro-level Nikon FX-format camera—dazzling full-frame images, broadcast-quality 1080p video at your fingertips, superior low-light performance, faster frame rate up to 6 frames-per-second (fps), tack sharp autofocus with 39 focus points, built-in flash with Commander Mode, wireless photo sharing and much more—is attainable in a compact, lightweight full-frame HD-SLR body. A new continuous quiet mode lets you capture a sequence of shots without the noise associated with the raising and lowering of the D-SLR\'s mirror. Optimized for full-frame shooting, streamlined for compactness and value, the D610 will fuel your photographic passion like never before.\n' +
+            'Passionate photographers who seek uncompromised full-frame, high-resolution performance rely on Nikon FX-format HD-SLRs. With a level of performance only bested by Nikon\'s own D800 series D-SLRs, D610\'s 24.3 megapixel FX-format CMOS sensor, wide dynamic range and high S/N (signal-to-noise) ratio captures every detail with lifelike sharpness and low noise throughout its wide ISO range. Low-light performance is synonymous with Nikon—shoot crystal clear images from ISO 100 to 6400, expandable down to 50 and up to 25,600 for extreme situations. EXPEED 3 processing system manages all that data with remarkable speed and accuracy, enabling up to 6 fps continuous shooting at full resolution in both FX and DX formats.\n'
+        },
+      ],
     highlights:
       [
         'Format FX',
@@ -271,7 +324,21 @@ const products = [
     numReviews: 1,
     sku: '122YW155',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Powerful Zoom. Epic Close-ups',
+          value: 'Unleash the power of high zoom, high performance and Canon\'s advanced technology. The PowerShot SX540 HS is a versatile and easy-to-use camera for virtually anyone who wants to capture their favorite subjects, from family get-togethers to amazing safaris, to school plays and the beautiful moments of life in between. Whether you\'re capturing something up close or in the distance, you\'ll be able to get the shot you want with its incredible 50x (24–1200mm) zoom power.'
+        },
+        {
+          title: '20.3 Megapixel* High-Sensitivity CMOS Sensor',
+          value: 'The PowerShot SX540 HS camera employs a 20.3 Megapixel* High-Sensitivity CMOS sensor, which delivers powerful imaging performance and is optimized for use in compact cameras. Utilizing a sophisticated light-capturing design, it provides high sensitivity for high ISO capture with reduced noise. It\'s also incredibly fast, capable of rapidly capturing and moving image data to the processor, as well as enabling fast continuous shooting and fast autofocus.'
+        },
+        {
+          title: 'DIGIC 6 Image Processor',
+          value: 'The PowerShot SX540 HS camera is equipped with the DIGIC 6 Image Processor, which helps boost image quality in both stills and video. Improved light sensitivity allows for higher resolution with less noise when shooting in dark conditions, and Dynamic IS detects and compensates for tilt and parallel movement (shift blur) to help create video that\'s virtually free of distortion. The processor also enhances the performance capabilities of the PowerShot SX540 HS camera, enabling high-speed, high-quality continuous still image shooting at up to 6.0 frames per second. And video recording is impressive as ever, as the DIGIC 6 Image Processor enables Full HD at 60p, as well as MP4 recording. Highly compressed MP4 video not only preserves space on your memory card but also improves playback on compatible mobile devices. Plus, with MF Peaking possible thanks to the DIGIC 6 Image Processor, you\'ll have a pro-level focusing tool at your disposal.'
+        },
+      ],
     highlights:
       [
         'Weight 0.98 lbs',
@@ -327,7 +394,22 @@ const products = [
     numReviews: 1,
     sku: '1Q2YW155',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Full-frame imaging in a compact body',
+          value: 'Bigger sensors create better images, and the α7C\'s full-frame sensor is much larger than the sensors in smartphones, compact digital cameras, and similar-sized APS-C interchangeable-lens cameras. The resulting increased light collection allows for professional-quality images with reduced noise, and more retained detail in both shadows and highlights.',
+        },
+        {
+          title: 'Make a difference with a larger sensor',
+          value: 'With a full-frame sensor it\'s possible to take shots and achieve impressive images that are unique to this format. The α7C\'s sensor is more than twice the size of the sensors found in APS-C cameras of similar body size, and up to 30 times larger than a smartphone sensor, for stunning images with greater depth and detail.'
+
+        },
+        {
+          title: 'Compact size, easy operation',
+          value: 'The α7C was fashioned to be compact, lightweight, and portable without compromising genuine full-frame camera performance. This goal was accomplished by developing new mechanical components, such as a space-saving shutter and optical stabilization unit, along with layout and structural enhancements. '
+        },
+      ],
     highlights:
       [
         '24.2 MP, Mirrorless Camera',
@@ -380,7 +462,17 @@ const products = [
     numReviews: 1,
     sku: '1Q2Y4155',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Zoom in on mind-bending new possibilities',
+          value: 'Meet the first NIKKOR fisheye lens with zoom capability—and the first NIKKOR zoom to capture epic 180° circular images. The AF-S FISHEYE NIKKOR 8-15mm f/3.5-4.5E ED lens brings a new level of versatility and sharpness to extreme wide-angle lenses, freeing you to choose the right fisheye perspective for the shot; to create frame-filling images from as close as 0.5 feet from your subject or to follow your passion into challenging, heavily backlit, even wet and dirty situations. For those seeking a new source of inspiration and expression, this lens delivers.'
+        },
+        {
+          title: 'One lens. Two great effects',
+          value: 'If you’re the kind of photographer or videographer who likes to think outside the box, the AF-S FISHEYE NIKKOR 8-15mm f/3.5-4.5E ED lens opens a new world of possibilities. Not only can you shoot traditional full-frame fisheye images, you can also zoom out to create fascinating 180° circular images. And you can get extremely close to your subject—as close as 0.5 feet with a 0.34x reproduction ratio—for close-up fisheye shots. Create images unlike any you\'ve seen.'
+        },
+      ],
     highlights:
       [
         'Silent Wave Motor',
@@ -435,7 +527,21 @@ const products = [
     numReviews: 1,
     sku: '1552Y4155',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Bright F2.8 maximum aperture from 12 mm to 24 mm',
+          value: 'The ultra-wide 12-mm angle of view available with this versatile lens makes it possible to emphasize distance and create dynamic perspectives that are beyond the scope of the human eye. Expand your artistic palette with deep, engaging visual imagery.'
+        },
+        {
+          title: 'Innovative optics with the largest XA element in any α lens',
+          value: 'Three XA (extreme aspherical) elements, including the largest ever made, combine with one aspherical element in an innovative optical design that achieves stunning G Master resolution throughout the image area. Two Super ED (Extra-low Dispersion) and three ED glass elements suppress chromatic aberration, and a new Nano AR Coating II minimizes flare and ghosting for clear, crisp imagery.'
+        },
+        {
+          title: 'Ultra-wide angles and large aperture in a small, lightweight zoom',
+          value: 'An advanced optical design with four aspherical elements, including three XA types, plus a mechanical design that features Sony\'s original XD linear motors, in a compact, lightweight 12–24-mm constant F2.8 zoom that delivers stunning image quality. In addition to being ideal for landscapes, night scenes, and architecture, this lens provides extra mobility for active sports photographers shooting wide angles.'
+        },
+      ],
     highlights:
       [
         'E-Mount Lens/Full-Frame Format',
@@ -490,7 +596,21 @@ const products = [
     numReviews: 1,
     sku: 'E552Y4155',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'First Compact and Lightweight 600mm Super Telephoto RF Lens',
+          value: 'The RF600mm F11 IS STM Lens is the first 600mm super-telephoto in the RF lens lineup and is more portable than its EF counterparts in this category because of its design advantage. The 600mm range provides a far reach not only in distance to the subject, but also in terms of who can access it with its affordable price, smaller super-telephoto footprint, and lighter weight.'
+        },
+        {
+          title: 'Excellent Portability made Easier with an Extending/Retracting Locking Lens Barrel Design',
+          value: 'With a design that enables you to retract the lens barrel when not shooting, the lens is even more compact so it can more easily be stored or carried in a bag with additional lenses and accessories. When you’re ready to shoot, just unlock to extend the lens barrel, lock it in place for stability and capture your shots, then unlock, retract, and store again to easily move to your next destination.'
+        },
+        {
+          title: 'Gapless double-layer Diffractive Optics (DO) reduce Chromatic Aberration for High Image Quality',
+          value: 'The use of gapless dual-layered diffractive optical elements helps reduce chromatic aberrations so your images are clear and detailed for high-quality results all around. And because one DO lens has the optical characteristics of multiple lenses, this contributes to the light weight of the lens itself, as well.'
+        },
+      ],
     highlights:
       [
         'Control Ring for Direct Setting Changes',
@@ -536,7 +656,13 @@ const products = [
     numReviews: 1,
     sku: 'T552Y4155',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Appointment',
+          value: 'The Nikon Bag Yellow is a camera bag designed for use with a Nikon DSLR and NIKKOR lens or lenses and has compartments for small accessories and two removable dividers that allow you to configure the bag for your needs. The bag features a front pocket with a zipper and a Velcro closure on the front. The Nikon Bag Yellow comes with a shoulder strap with added protection for greater comfort during use. The bag is black with yellow features on the outside and yellow on the inside.'
+        },
+      ],
     highlights:
       [
         'Made of a polyester material',
@@ -574,7 +700,13 @@ const products = [
     numReviews: 1,
     sku: 'T552Y7155',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Appointment',
+          value: 'An all-purpose bag for carrying camera systems of varying sizes, the Canon EDC-1 Camera Backpack is a versatile bag for holding up to two camera bodies, two to three lenses, and accessories. An internal sleeve holds a 15" laptop or tablet and two internal dividers can be adjusted to suit your camera setup. The exterior features a separate tripod pocket and attachment strap on the side to keep it secure. Two adjustable, padded shoulder straps offer comfort for extended use. Additionally, the durable construction incorporates a rain cover for protection against water and the zippers are lockable for added security.'
+        },
+      ],
     highlights:
       [
         'Holds 1-2 Cameras, 3 Lenses, Accessories',
@@ -613,7 +745,13 @@ const products = [
     numReviews: 1,
     sku: 'T552Y7B55',
     youtubeEmbed: 'ZMvWFGFyeD8',
-    description: '',
+    description: 
+      [
+        {
+          title: 'Appointment',
+          value: 'The black, lightweight System Carrying Case from Sony is designed to carry a DSLR and 1-2 lenses, or a mirrorless camera with 2-3 lenses. It provides a way to have your camera safely with you at all times. It\'s covered by a wide front flap that is secured by two strong buckles that makes accessing your gear easy and rapid. The inside is supplied with two movable dividers that permit you to arrange the interior to suit your gear needs. In addition, there are front, side and rear accessory pockets that are designed to hold small accessories like batteries, memory cards, cables or your lens cap.'
+        },
+      ],
     highlights:
       [
         'Holds DSLR and 1-2 Lenses',
