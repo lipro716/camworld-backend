@@ -75,6 +75,12 @@ module.exports = buildSchema(`
       productId: Int
     }
     
+    type User {
+      id: Int
+      email: String
+      token: String
+    }
+    
     input sortItem {
       sortBy: String
       priceMin: Float
@@ -90,7 +96,12 @@ module.exports = buildSchema(`
       productId: Int!
    }
    
-   input Mail {
+   input UserInput {
+      email: String!, 
+      password: String, 
+   }
+   
+   input MailInput {
       name: String!
       email: String!
       website: String
@@ -108,6 +119,7 @@ module.exports = buildSchema(`
     
     type Mutation {
       addReview(data: ReviewInput!): Review
-      sendMail(data: Mail!): String
+      sendMail(data: MailInput!): String
+      registerUser(data: UserInput!): User
     }
 `);

@@ -1,6 +1,5 @@
 const Sequelize = require('sequelize');
 const sequelize = require('../utils/database');
-const {hooks} = require('./user-role.hook');
 
 const User = sequelize.define('user', {
   id: {
@@ -23,6 +22,6 @@ const User = sequelize.define('user', {
     type: Sequelize.CHAR,
     allowNull: false,
   },
-}, {hooks});
+}, {timestamps: true});
 
 module.exports = User;
