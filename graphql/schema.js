@@ -65,6 +65,7 @@ module.exports = buildSchema(`
       review: String
       rating: Int
       productId: Int
+      createdAt:String
     }
     
     type Spec {
