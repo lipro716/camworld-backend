@@ -6,7 +6,7 @@ module.exports = buildSchema(`
       name: String
       slug: String
       image: String
-      description: String
+      description: [Description]
       price: Float
       categoryId: Int
       sku: String
