@@ -121,5 +121,6 @@ module.exports = buildSchema(`
       addReview(data: ReviewInput!): Review
       sendMail(data: MailInput!): String
       registerUser(data: UserInput!): User
+      loginUser(data: UserInput!): User
     }
 `);

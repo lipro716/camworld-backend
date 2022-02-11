@@ -3,14 +3,17 @@ const Sequelize = require('sequelize');
 const User = require('../../models/User');
 const generateToken = require('../../utils/generateToken');
 const Role = require('../../models/Role');
+const matchPassword = require('../../utils/matchPassword');
 
 module.exports = {
   Mutation: {
     async registerUser(root, {data}) {
       try {
+        data.email = data.email.trim()
+        data.password = data.password.trim()
         const user = await User.create({
           email: data.email,
-          password: bcrypt.hashSync(data.password, 10),
+          password: await bcrypt.hashSync(data.password, 10).trim(),
         });
         const [role] = await Role.findOrCreate({where: {name: 'customer'}});
         await user.addRole(role.id);
@@ -39,6 +42,23 @@ module.exports = {
           }
           throw new Error(message.join(', '));
         }
+      }
+    },
+
+    async loginUser(root, {data}) {
+      const user = await User.findOne({
+        where: { email: data.email },
+      })
+      user.password = user.password.trim()
+      const password = data.password.trim()
+      if (user && (await matchPassword(password, user.password))) {
+        return {
+          id: user.id,
+          email: user.email,
+          token: generateToken(user.id),
+        }
+      } else {
+        throw new Error('Invalid email or password')
       }
     },
   },
