@@ -2,14 +2,14 @@ const products = [
   {
     name: 'Nikon D5XQD',
     slug: 'nikon-d5xqd',
-    image: '/uploads/products/D5-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/D5-1.png',
     gallery:
       [
-        '/uploads/products/D5-1.png',
-        '/uploads/products/D5-2.png',
-        '/uploads/products/D5-3.png',
-        '/uploads/products/D5-4.png',
-        '/uploads/products/D5-5.png',
+        'https://camworld.s3.amazonaws.com/products/D5-1.png',
+        'https://camworld.s3.amazonaws.com/products/D5-2.png',
+        'https://camworld.s3.amazonaws.com/products/D5-3.png',
+        'https://camworld.s3.amazonaws.com/products/D5-4.png',
+        'https://camworld.s3.amazonaws.com/products/D5-5.png',
       ],
     price: 1900,
     category: 'Cameras',
@@ -73,21 +73,21 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Nikon',
+        name: 'Nikon', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'Nikon D6',
     slug: 'nikon-d6',
-    image: '/uploads/products/D6-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/D6-1.png',
     gallery:
       [
-        '/uploads/products/D6-1.png',
-        '/uploads/products/D6-2.png',
-        '/uploads/products/D6-3.png',
-        '/uploads/products/D6-4.png',
-        '/uploads/products/D6-5.png',
+        'https://camworld.s3.amazonaws.com/products/D6-1.png',
+        'https://camworld.s3.amazonaws.com/products/D6-2.png',
+        'https://camworld.s3.amazonaws.com/products/D6-3.png',
+        'https://camworld.s3.amazonaws.com/products/D6-4.png',
+        'https://camworld.s3.amazonaws.com/products/D6-5.png',
       ],
     price: 1850,
     category: 'Cameras',
@@ -155,21 +155,21 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Nikon',
+        name: 'Nikon', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'Nikon D850',
     slug: 'nikon-d850',
-    image: '/uploads/products/D850-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/D850-1.png',
     gallery:
       [
-        '/uploads/products/D850-1.png',
-        '/uploads/products/D850-2.png',
-        '/uploads/products/D850-3.png',
-        '/uploads/products/D850-4.png',
-        '/uploads/products/D850-5.png',
+        'https://camworld.s3.amazonaws.com/products/D850-1.png',
+        'https://camworld.s3.amazonaws.com/products/D850-2.png',
+        'https://camworld.s3.amazonaws.com/products/D850-3.png',
+        'https://camworld.s3.amazonaws.com/products/D850-4.png',
+        'https://camworld.s3.amazonaws.com/products/D850-5.png',
       ],
     price: 1000,
     category: 'Cameras',
@@ -233,21 +233,21 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Nikon',
+        name: 'Nikon', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'Nikon D610',
     slug: 'nikon-d610',
-    image: '/uploads/products/D610-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/D610-1.png',
     gallery:
       [
-        '/uploads/products/D610-1.png',
-        '/uploads/products/D610-2.png',
-        '/uploads/products/D610-3.png',
-        '/uploads/products/D610-4.png',
-        '/uploads/products/D610-5.png',
+        'https://camworld.s3.amazonaws.com/products/D610-1.png',
+        'https://camworld.s3.amazonaws.com/products/D610-2.png',
+        'https://camworld.s3.amazonaws.com/products/D610-3.png',
+        'https://camworld.s3.amazonaws.com/products/D610-4.png',
+        'https://camworld.s3.amazonaws.com/products/D610-5.png',
       ],
     price: 887,
     category: 'Cameras',
@@ -304,19 +304,19 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Nikon',
+        name: 'Nikon', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'Canon PowerShot SX540',
     slug: 'canon-power-shot-sx540',
-    image: '/uploads/products/canons-sx540-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/canons-sx540-1.png',
     gallery:
       [
-        '/uploads/products/canons-sx540-1.png',
-        '/uploads/products/canons-sx540-2.png',
-        '/uploads/products/canons-sx540-3.png',
+        'https://camworld.s3.amazonaws.com/products/canons-sx540-1.png',
+        'https://camworld.s3.amazonaws.com/products/canons-sx540-2.png',
+        'https://camworld.s3.amazonaws.com/products/canons-sx540-3.png',
       ],
     price: 300,
     category: 'Cameras',
@@ -372,21 +372,21 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Canon',
+        name: 'Canon', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'Sony Alpha 7C Compact',
     slug: 'sony-alpha-7c-compact',
-    image: '/uploads/products/sony-alpha-7c-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/sony-alpha-7c-1.png',
     gallery:
       [
-        '/uploads/products/sony-alpha-7c-1.png',
-        '/uploads/products/sony-alpha-7c-2.png',
-        '/uploads/products/sony-alpha-7c-3.png',
-        '/uploads/products/sony-alpha-7c-4.png',
-        '/uploads/products/sony-alpha-7c-5.png',
+        'https://camworld.s3.amazonaws.com/products/sony-alpha-7c-1.png',
+        'https://camworld.s3.amazonaws.com/products/sony-alpha-7c-2.png',
+        'https://camworld.s3.amazonaws.com/products/sony-alpha-7c-3.png',
+        'https://camworld.s3.amazonaws.com/products/sony-alpha-7c-4.png',
+        'https://camworld.s3.amazonaws.com/products/sony-alpha-7c-5.png',
       ],
     price: 1800,
     category: 'Cameras',
@@ -443,18 +443,18 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Sony',
+        name: 'Sony', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'AF-S FISHEYE NIKKOR 8-15mm f/3.5-4.5E ED',
     slug: 'af-s-fisheye-nikkor',
-    image: '/uploads/products/nikon-linces-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/nikon-linces-1.png',
     gallery:
       [
-        '/uploads/products/nikon-linces-1.png',
-        '/uploads/products/nikon-linces-2.png',
+        'https://camworld.s3.amazonaws.com/products/nikon-linces-1.png',
+        'https://camworld.s3.amazonaws.com/products/nikon-linces-2.png',
       ],
     price: 1245,
     category: 'Lenses',
@@ -506,20 +506,20 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Nikon',
+        name: 'Nikon', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'FE 12–24 mm F2.8 GM',
     slug: 'fe-2–24-mm-f2-8-gm',
-    image: '/uploads/products/sony-linces-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/sony-linces-1.png',
     gallery:
       [
-        '/uploads/products/sony-linces-1.png',
-        '/uploads/products/sony-linces-2.png',
-        '/uploads/products/sony-linces-3.png',
-        '/uploads/products/sony-linces-4.png',
+        'https://camworld.s3.amazonaws.com/products/sony-linces-1.png',
+        'https://camworld.s3.amazonaws.com/products/sony-linces-2.png',
+        'https://camworld.s3.amazonaws.com/products/sony-linces-3.png',
+        'https://camworld.s3.amazonaws.com/products/sony-linces-4.png',
       ],
     price: 1455,
     category: 'Lenses',
@@ -575,20 +575,20 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Sony',
+        name: 'Sony', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'RF600mm F11 IS STM',
     slug: 'rf600mm-f11-is-stm',
-    image: '/uploads/products/canon-linces-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/canon-linces-1.png',
     gallery:
       [
-        '/uploads/products/canon-linces-1.png',
-        '/uploads/products/canon-linces-2.png',
-        '/uploads/products/canon-linces-3.png',
-        '/uploads/products/canon-linces-4.png',
+        'https://camworld.s3.amazonaws.com/products/canon-linces-1.png',
+        'https://camworld.s3.amazonaws.com/products/canon-linces-2.png',
+        'https://camworld.s3.amazonaws.com/products/canon-linces-3.png',
+        'https://camworld.s3.amazonaws.com/products/canon-linces-4.png',
       ],
     price: 700,
     category: 'Lenses',
@@ -636,19 +636,19 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Canon',
+        name: 'Canon', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'Nikon Bag Yellow',
     slug: 'nikon-bag-yellow',
-    image: '/uploads/products/nikon-accessories-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/nikon-accessories-1.png',
     gallery:
       [
-        '/uploads/products/nikon-accessories-1.png',
-        '/uploads/products/nikon-accessories-2.png',
-        '/uploads/products/nikon-accessories-3.png',
+        'https://camworld.s3.amazonaws.com/products/nikon-accessories-1.png',
+        'https://camworld.s3.amazonaws.com/products/nikon-accessories-2.png',
+        'https://camworld.s3.amazonaws.com/products/nikon-accessories-3.png',
       ],
     price: 28,
     category: 'Accessories',
@@ -681,18 +681,18 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Nikon',
+        name: 'Nikon', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'Camera Backpack EDC-1',
     slug: 'camera-backpack-ecd-1',
-    image: '/uploads/products/canon-accessories-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/canon-accessories-1.png',
     gallery:
       [
-        '/uploads/products/canon-accessories-1.png',
-        '/uploads/products/canon-accessories-2.png',
+        'https://camworld.s3.amazonaws.com/products/canon-accessories-1.png',
+        'https://camworld.s3.amazonaws.com/products/canon-accessories-2.png',
       ],
     price: 90,
     category: 'Accessories',
@@ -727,17 +727,17 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Canon',
+        name: 'Canon', taxonomy: 'Brands',
       },
     ],
   },
   {
     name: 'Sony System Carrying Case',
     slug: 'sony-system-carrying-case',
-    image: '/uploads/products/sony-accessories-1.png',
+    image: 'https://camworld.s3.amazonaws.com/products/sony-accessories-1.png',
     gallery:
       [
-        '/uploads/products/sony-accessories-1.png',
+        'https://camworld.s3.amazonaws.com/products/sony-accessories-1.png',
       ],
     price: 46,
     category: 'Accessories',
@@ -768,7 +768,7 @@ const products = [
       ],
     subTaxonomy: [
       {
-        name: 'Sony',
+        name: 'Sony', taxonomy: 'Brands',
       },
     ],
   },

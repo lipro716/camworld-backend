@@ -32,9 +32,11 @@ const self = module.exports = {
   },
 
   async getSubTaxonomy(dto) {
+    const taxonomy = await self.getTaxonomy({name: dto.taxonomy})
     return await SubTaxonomy.findOne({
       where: {
         name: dto.name,
+        taxonomyId: taxonomy.id,
       },
     });
   },

@@ -3,13 +3,16 @@ const Highlight = require('../models/Highlight');
 const Spec = require('../models/Spec');
 const Product = require('../models/Product');
 const Description = require('../models/Description');
-const {getCategory} = require('./category');
+const {getCategory, createCategory} = require('./category');
 const {getSubTaxonomy} = require('./taxonomy');
 const {generateProductSlug} = require('../utils/helpers');
 
 const self = module.exports = {
   async createProduct(dto) {
-    const category = await getCategory({name: dto.category})
+    let category = await getCategory({name: dto.category})
+    if (!category) {
+      category = await createCategory({name: dto.category})
+    }
     const product = await Product.create({
       name: dto.name,
       slug: await generateProductSlug(dto.name, '/product/'),
@@ -40,7 +43,7 @@ const self = module.exports = {
     }
     if (dto.subTaxonomy) {
       for await (let item of dto.subTaxonomy) {
-        const subTaxonomy = await getSubTaxonomy({name: item.name})
+        const subTaxonomy = await getSubTaxonomy({name: item.name, taxonomy: item.taxonomy})
         await product.addSubTaxonomy(subTaxonomy.id);
       }
     }
