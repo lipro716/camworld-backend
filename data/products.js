@@ -75,6 +75,18 @@ const products = [
       {
         name: 'Nikon', taxonomy: 'Brands',
       },
+      {
+        name: 'Mirror',
+        taxonomy: 'System',
+      },
+      {
+        name: '16 - 20 MP',
+        taxonomy: 'Effective Pixels',
+      },
+      {
+        name: 'Full frame (35mm)',
+        taxonomy: 'Sensor size',
+      },
     ],
   },
   {
@@ -157,6 +169,18 @@ const products = [
       {
         name: 'Nikon', taxonomy: 'Brands',
       },
+      {
+        name: 'Compact',
+        taxonomy: 'System',
+      },
+      {
+        name: '12 - 16 MP',
+        taxonomy: 'Effective Pixels',
+      },
+      {
+        name: 'APS-C',
+        taxonomy: 'Sensor size',
+      },
     ],
   },
   {
@@ -235,6 +259,18 @@ const products = [
       {
         name: 'Nikon', taxonomy: 'Brands',
       },
+      {
+        name: 'Instant Print',
+        taxonomy: 'System',
+      },
+      {
+        name: 'Over 20 MP',
+        taxonomy: 'Effective Pixels',
+      },
+      {
+        name: '4/3" (17.3x13 mm)',
+        taxonomy: 'Sensor size',
+      },
     ],
   },
   {
@@ -306,6 +342,18 @@ const products = [
       {
         name: 'Nikon', taxonomy: 'Brands',
       },
+      {
+        name: 'Instant Print',
+        taxonomy: 'System',
+      },
+      {
+        name: 'Over 20 MP',
+        taxonomy: 'Effective Pixels',
+      },
+      {
+        name: '4/3" (17.3x13 mm)',
+        taxonomy: 'Sensor size',
+      },
     ],
   },
   {
@@ -373,6 +421,18 @@ const products = [
     subTaxonomy: [
       {
         name: 'Canon', taxonomy: 'Brands',
+      },
+      {
+        name: 'Instant Print',
+        taxonomy: 'System',
+      },
+      {
+        name: 'Over 20 MP',
+        taxonomy: 'Effective Pixels',
+      },
+      {
+        name: '4/3" (17.3x13 mm)',
+        taxonomy: 'Sensor size',
       },
     ],
   },
@@ -445,6 +505,18 @@ const products = [
       {
         name: 'Sony', taxonomy: 'Brands',
       },
+      {
+        name: 'Compact',
+        taxonomy: 'System',
+      },
+      {
+        name: '16 - 20 MP',
+        taxonomy: 'Effective Pixels',
+      },
+      {
+        name: 'APS-C',
+        taxonomy: 'Sensor size',
+      },
     ],
   },
   {
@@ -507,6 +579,18 @@ const products = [
     subTaxonomy: [
       {
         name: 'Nikon', taxonomy: 'Brands',
+      },
+      {
+        name: 'Regular',
+        taxonomy: 'Aperture',
+      },
+      {
+        name: 'Aperture',
+        taxonomy: 'Aperture',
+      },
+      {
+        name: 'Optical stabilization',
+        taxonomy: 'Peculiarities',
       },
     ],
   },
@@ -577,6 +661,22 @@ const products = [
       {
         name: 'Sony', taxonomy: 'Brands',
       },
+      {
+        name: 'Super fast',
+        taxonomy: 'Aperture',
+      },
+      {
+        name: 'Aperture',
+        taxonomy: 'Aperture',
+      },
+      {
+        name: 'Optical stabilization',
+        taxonomy: 'Peculiarities',
+      },
+      {
+        name: 'USM',
+        taxonomy: 'Peculiarities',
+      },
     ],
   },
   {
@@ -637,6 +737,18 @@ const products = [
     subTaxonomy: [
       {
         name: 'Canon', taxonomy: 'Brands',
+      },
+      {
+        name: 'Super fast',
+        taxonomy: 'Aperture',
+      },
+      {
+        name: 'Optical stabilization',
+        taxonomy: 'Peculiarities',
+      },
+      {
+        name: 'USM',
+        taxonomy: 'Peculiarities',
       },
     ],
   },

@@ -95,6 +95,11 @@ module.exports = buildSchema(`
       name: String
     }
     
+    type MinMaxPrice {
+      min: Float
+      max: Float
+    }
+    
     input sortItem {
       sortBy: String
       priceMin: Float
@@ -129,6 +134,7 @@ module.exports = buildSchema(`
       getCategories: [Category]
       getCategory(id: Int!): Category
       getProductById(id: Int!): Product
+      getMaxMinPrice(categoryId: Int!): MinMaxPrice
       getUser: User
     }
     
