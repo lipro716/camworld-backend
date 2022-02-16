@@ -10,9 +10,9 @@ module.exports = {
     async getCategories(root) {
       try {
         return await Category.findAll({
-          order: [
-            ['name', 'ASC'],
-          ],
+          include:[{
+            all:true,
+          }]
         });
       } catch (e) {
         throw new Error('Fetch is not available');

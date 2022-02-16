@@ -6,7 +6,6 @@ module.exports = buildSchema(`
       name: String
       slug: String
       image: String
-      description: [Description]
       price: Float
       categoryId: Int
       sku: String
@@ -39,6 +38,7 @@ module.exports = buildSchema(`
       name: String
       slug: String
       taxonomies: [Taxonomy]
+      products: [Product]
     }
     
     type Taxonomy {
